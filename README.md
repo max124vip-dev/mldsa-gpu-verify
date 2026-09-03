@@ -90,7 +90,7 @@ Details and how to reproduce: [docs/BENCHMARKS.md](docs/BENCHMARKS.md)
 **Important:** do **not** use the green **Code → Download ZIP** button — that is source only (no `.exe` / `.dll`).
 
 1. Open **[Releases](https://github.com/max124vip-dev/mldsa-gpu-verify/releases/latest)** (`v0.2.0-eval`).  
-2. Download **`mldsa-gpu-verify-v0.2.0-eval-windows.zip`** (everything in one archive), **or** download all assets into one folder.  
+2. Download **`mldsa-gpu-verify-v0.2.0-eval-windows.zip`** — the only file you need (binaries + scripts inside).  
 3. Extract to a folder, e.g. `C:\mldsa-eval\`.  
 4. Run **`quick_test.bat`** from that folder (not from `scripts\` inside the source tree).  
 

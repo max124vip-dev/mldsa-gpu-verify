@@ -4,9 +4,10 @@ Binaries are on the **[Releases](https://github.com/max124vip-dev/mldsa-gpu-veri
 
 ## Latest: v0.2.0-eval
 
-| File | Description |
-|------|-------------|
-| **`mldsa-gpu-verify-v0.2.0-eval-windows.zip`** | **Recommended** — all binaries + bats in one archive |
+**Download:** [`mldsa-gpu-verify-v0.2.0-eval-windows.zip`](https://github.com/max124vip-dev/mldsa-gpu-verify/releases/latest) — single archive with everything below.
+
+| Inside the ZIP | Description |
+|----------------|-------------|
 | `libmldsa_gpu_verify.dll` | Evaluation DLL — batch ML-DSA verify (Dilithium2) |
 | `libmldsa_gpu_verify.lib` | MSVC import library (link your app against the DLL) |
 | `demo_verify.exe` | Signs with pq-crystals ref, verifies via DLL — integration smoke test |
