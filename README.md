@@ -83,9 +83,12 @@ Details and how to reproduce: [docs/BENCHMARKS.md](docs/BENCHMARKS.md)
 
 ### Steps
 
-1. Download assets from **[Releases](https://github.com/max124vip-dev/mldsa-gpu-verify/releases/latest)** (`v0.2.0-eval`).  
-2. Extract everything into one folder.  
-3. **Quick test** — double-click **`quick_test.bat`** (or run `.\quick_test.bat` in PowerShell).  
+**Important:** do **not** use the green **Code → Download ZIP** button — that is source only (no `.exe` / `.dll`).
+
+1. Open **[Releases](https://github.com/max124vip-dev/mldsa-gpu-verify/releases/latest)** (`v0.2.0-eval`).  
+2. Download **`mldsa-gpu-verify-v0.2.0-eval-windows.zip`** (everything in one archive), **or** download all assets into one folder.  
+3. Extract to a folder, e.g. `C:\mldsa-eval\`.  
+4. Run **`quick_test.bat`** from that folder (not from `scripts\` inside the source tree).  
 
 Expect `RESULT: PASS` — signs with pq-crystals ref, verifies via `libmldsa_gpu_verify.dll`. Takes a few seconds.
 

@@ -6,6 +6,7 @@ Binaries are on the **[Releases](https://github.com/max124vip-dev/mldsa-gpu-veri
 
 | File | Description |
 |------|-------------|
+| **`mldsa-gpu-verify-v0.2.0-eval-windows.zip`** | **Recommended** — all binaries + bats in one archive |
 | `libmldsa_gpu_verify.dll` | Evaluation DLL — batch ML-DSA verify (Dilithium2) |
 | `libmldsa_gpu_verify.lib` | MSVC import library (link your app against the DLL) |
 | `demo_verify.exe` | Signs with pq-crystals ref, verifies via DLL — integration smoke test |
@@ -18,11 +19,10 @@ Binaries are on the **[Releases](https://github.com/max124vip-dev/mldsa-gpu-veri
 
 ### Quick test (easiest)
 
-Double-click **`quick_test.bat`** or run:
+1. Download **`mldsa-gpu-verify-v0.2.0-eval-windows.zip`** from [Releases](https://github.com/max124vip-dev/mldsa-gpu-verify/releases/latest)  
+2. Extract and double-click **`quick_test.bat`**
 
-```powershell
-.\quick_test.bat
-```
+Do **not** use **Code → Download ZIP** (source only, no binaries).
 
 ### Quick test (manual)
 

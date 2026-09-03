@@ -11,6 +11,12 @@ echo.
 
 if not exist "bench_ntt.exe" (
     echo ERROR: bench_ntt.exe not found.
+    echo.
+    echo Download the evaluation package ^(NOT the source Code zip^):
+    echo   https://github.com/max124vip-dev/mldsa-gpu-verify/releases/latest
+    echo.
+    echo Use: mldsa-gpu-verify-v0.2.0-eval-windows.zip
+    echo Extract and run run_benchmark.bat from the same folder as bench_ntt.exe.
     pause
     exit /b 1
 )

@@ -11,7 +11,16 @@ echo.
 
 if not exist "libmldsa_gpu_verify.dll" (
     echo ERROR: libmldsa_gpu_verify.dll not found in this folder.
-    echo Extract all files from the GitHub Release into one folder.
+    echo.
+    echo You likely downloaded the SOURCE CODE zip ^(green Code - Download ZIP^).
+    echo That archive has NO binaries - only docs and scripts.
+    echo.
+    echo Download the evaluation package instead:
+    echo   https://github.com/max124vip-dev/mldsa-gpu-verify/releases/latest
+    echo.
+    echo Get file: mldsa-gpu-verify-v0.2.0-eval-windows.zip
+    echo Or download ALL assets from the release into ONE folder.
+    echo Then run quick_test.bat from that folder ^(not from scripts\^).
     goto :fail
 )
 if not exist "demo_verify.exe" (
