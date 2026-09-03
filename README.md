@@ -69,6 +69,10 @@ The public key is prepared once and **cached on the GPU** (expanded matrix, prec
 
 **Correctness:** bit-exact vs [pq-crystals](https://github.com/pq-crystals/dilithium) reference — 512 signatures, full pipeline, **PASS**.
 
+**Example output** from the evaluation benchmark ([Releases](https://github.com/max124vip-dev/mldsa-gpu-verify/releases/latest), RTX 3080):
+
+![MLDSA-GPU evaluation benchmark on RTX 3080 — correctness PASS, ~733k verify/s](docs/images/benchmark-rtx3080.png)
+
 Details and how to reproduce: [docs/BENCHMARKS.md](docs/BENCHMARKS.md)
 
 ---
@@ -98,12 +102,11 @@ Expect `RESULT: PASS` — signs with pq-crystals ref, verifies via `libmldsa_gpu
 .\bench_ntt.exe 4096 512 10
 ```
 
-At the end, look for:
+At the end, look for **`RESULT: PASS`** and throughput lines like:
 
 ```
-GPU pipeline (replay): ... verify/s
-GPU pipeline (+H2D):   ... verify/s
-ref + hybrid + cuda pipeline: PASS
+GPU pipeline (+H2D)      ... ms        598000 /s
+GPU pipeline (replay)    ... ms        733000 /s
 ```
 
 **PASS** means the math matches the reference. **verify/s** is your throughput on that GPU.
