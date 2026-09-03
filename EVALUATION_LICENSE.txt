@@ -1,0 +1,41 @@
+MLDSA-GPU VERIFY — EVALUATION LICENSE
+=====================================
+
+Copyright (c) 2026 max124vip-dev. All rights reserved.
+
+Author and sole developer: max124vip-dev
+https://github.com/max124vip-dev
+
+CUDA kernel source code is PROPRIETARY and NOT included in this repository.
+
+GRANT
+-----
+You are granted a non-exclusive, non-transferable license to use the
+evaluation benchmark binary (bench_ntt.exe) distributed via official
+GitHub Releases of max124vip-dev/mldsa-gpu-verify solely to:
+
+  (a) measure verification throughput on your hardware;
+  (b) verify correctness output (PASS/FAIL) as printed by the tool;
+  (c) evaluate whether to pursue a commercial license.
+
+RESTRICTIONS
+------------
+You may NOT:
+
+  - use the binary in production systems;
+  - redistribute the binary except by linking to official Releases;
+  - reverse-engineer, decompile, or disassemble the binary;
+  - remove or alter license notices;
+  - sublicense or sell access to the binary.
+
+NO WARRANTY
+-----------
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+CRYPTOGRAPHIC SOFTWARE REQUIRES INDEPENDENT VALIDATION FOR YOUR USE CASE.
+
+COMMERCIAL USE
+--------------
+Contact: https://github.com/max124vip-dev/mldsa-gpu-verify/issues/new?template=commercial-license.md
+Telegram: https://t.me/MaxVip124
+
+Commercial licenses include DLL, CUDA source under NDA, and integration terms.

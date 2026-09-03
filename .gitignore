@@ -1,0 +1,15 @@
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Local notes
+*.local.md
+.topics.json
+
+# Release binaries (uploaded via GitHub Releases only)
+release-assets/
