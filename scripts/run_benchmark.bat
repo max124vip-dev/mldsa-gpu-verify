@@ -5,8 +5,10 @@ title MLDSA-GPU Benchmark
 
 echo ============================================================
 echo  MLDSA-GPU Verify - Full Benchmark
-echo  This may take a few minutes (correctness + timing).
+echo  This may take a few minutes.
 echo ============================================================
+echo.
+echo Downloaded from GitHub Releases? Use the ZIP, not Code ZIP.
 echo.
 
 if not exist "bench_ntt.exe" (
@@ -28,7 +30,8 @@ bench_ntt.exe 4096 512 10
 set "RC=%ERRORLEVEL%"
 echo.
 if "%RC%"=="0" (
-    echo Benchmark finished. Check verify/s numbers above.
+    echo.
+    echo Benchmark finished. Look for RESULT: PASS and verify/s above.
 ) else (
     echo Benchmark failed or was interrupted.
 )
