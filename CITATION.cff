@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use MLDSA-GPU Verify benchmarks or evaluation binaries in research or product comparisons, please cite this repository."
+title: MLDSA-GPU Verify
+version: 0.2.0-eval
+authors:
+  - family-names: max124vip-dev
+    affiliation: Independent
+repository-code: "https://github.com/max124vip-dev/mldsa-gpu-verify"
+url: "https://github.com/max124vip-dev/mldsa-gpu-verify"
+keywords:
+  - ML-DSA
+  - Dilithium
+  - post-quantum cryptography
+  - GPU
+  - CUDA
+  - signature verification
+  - batch verify
+  - FIPS 204

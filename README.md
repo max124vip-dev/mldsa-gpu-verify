@@ -1,6 +1,8 @@
-# MLDSA-GPU Verify
+# ML-DSA GPU Batch Signature Verification (CUDA / Dilithium2 / FIPS 204)
 
-**Fast post-quantum signature verification on NVIDIA GPUs — thousands of signatures per second.**
+**Fast post-quantum signature verification on NVIDIA GPUs — batch ML-DSA verify at ~700,000 signatures/second.**
+
+Keywords: `ML-DSA` · `Dilithium` · `Dilithium2` · `ML-DSA-44` · `GPU signature verification` · `CUDA` · `batch verify` · `post-quantum cryptography` · `FIPS 204` · `PQC` · `blockchain validator`
 
 Developer: [max124vip-dev](https://github.com/max124vip-dev) · Telegram: [@MaxVip124](https://t.me/MaxVip124)
 
@@ -142,10 +144,29 @@ Describe your use case (volume, GPU, OS, blockchain or not). I will reply with o
 
 ## More documentation
 
+- [FAQ — common search questions](docs/FAQ.md)  
 - [Benchmarks & methodology](docs/BENCHMARKS.md)  
 - [Library API (eval DLL)](docs/API.md)  
 - [Licensing](docs/LICENSING.md)  
 - [Author](AUTHORS.md)  
+
+---
+
+## FAQ (short)
+
+**Is this GPU Dilithium / ML-DSA signature verification?**  
+Yes — full **batch verify** for **Dilithium2 (ML-DSA-44)** on NVIDIA GPUs, not CPU-only NTT.
+
+**How fast vs CPU (liboqs / AVX2)?**  
+~**70–80×** on RTX 3080 for batches of thousands of signatures with one public key. See [benchmarks](docs/BENCHMARKS.md).
+
+**CUDA source on GitHub?**  
+No — eval **DLL** + benchmark here; CUDA kernels under commercial license.
+
+**Blockchain / validator use case?**  
+Yes, when you verify **many signatures per block** with the same key. You serialize messages; we verify raw bytes.
+
+More answers: [docs/FAQ.md](docs/FAQ.md)
 
 ---
 
